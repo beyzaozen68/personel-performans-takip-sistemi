@@ -1,0 +1,41 @@
+const router = require("express").Router();
+const { getPersonelUrun } = require("../controllers/controller");
+const { getPersonelTur } = require("../controllers/controller");
+const { getTakimPerformans } = require("../controllers/controller");
+const { getUrunGelecekAnalizi } = require("../controllers/controller");
+const { getTurGelecekAnalizi } = require("../controllers/controller");
+const { getTakimGelecekAnalizi } = require("../controllers/controller");
+const { getMaxMinUrunPerformans } = require("../controllers/controller");
+const { getMaxMinUrunPerformansChart } = require("../controllers/controller");
+const { getMaxMinTurPerformans } = require("../controllers/controller");
+const { getMaxMinTurPerformansChart } = require("../controllers/controller");
+const { getAllUrunPerformans } = require("../controllers/controller");
+const { getAllUrunPerformansChart } = require("../controllers/controller");
+const { getAllTurPerformans } = require("../controllers/controller");
+const { getAllTurPerformansChart } = require("../controllers/controller");
+const { getAllUrunPerformans1 } = require("../controllers/controller");
+const { getAllTurPerformans1 } = require("../controllers/controller");
+const { getAllTakimPerformansChart } = require("../controllers/controller");
+const { getAllTakimPerformansChart1 } = require("../controllers/controller");
+
+router.get("/getPersonelUrun", getPersonelUrun);
+router.get("/getPersonelTur", getPersonelTur);
+router.get("/getTakimPerformans", getTakimPerformans);
+router.get("/getUrunGelecekAnalizi/:personel_id", getUrunGelecekAnalizi);
+router.get("/getTurGelecekAnalizi/:personel_id", getTurGelecekAnalizi);
+router.get("/getTakimGelecekAnalizi/:takim_id", getTakimGelecekAnalizi);
+router.get("/getMaxMinUrunPerformans", getMaxMinUrunPerformans);
+router.get("/getMaxMinUrunPerformansChart", getMaxMinUrunPerformansChart);
+router.get("/getMaxMinTurPerformans", getMaxMinTurPerformans);
+router.get("/getMaxMinTurPerformansChart", getMaxMinTurPerformansChart);
+router.get("/getAllUrunPerformans", getAllUrunPerformans);
+router.get("/getAllUrunPerformansChart", getAllUrunPerformansChart);
+router.get("/getAllTurPerformans", getAllTurPerformans);
+router.get("/getAllTurPerformansChart", getAllTurPerformansChart);
+router.get("/getAllUrunPerformans1", getAllUrunPerformans1);
+router.get("/getAllTakimPerformansChart", getAllTakimPerformansChart);
+router.get("/getAllTakimPerformansChart1", getAllTakimPerformansChart1);
+router.get("/getAllTurPerformans1", getAllTurPerformans1);
+
+
+module.exports = router;
